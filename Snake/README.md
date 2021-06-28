@@ -1,7 +1,7 @@
 <div>
    <h1> Welcome to Snake </h1>
    <p> This is your classic game of Snake played through Window's CMD.
-       Currently there is no "end game" implement as this is just for fun </p>
+       Currently there is no "end game" implemented as this is just for fun </p>
    <div>
          <h2> Controls </h2>
          <ul>
