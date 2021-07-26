@@ -20,13 +20,22 @@ int countingValleys(int steps, std::string path)
     int valley = 0;
     for(int i = 0; i < steps; i++)
     {
+
         if(toupper(path.at(i)) == 'U')
         {
             seaLevel++;
+            if(seaLevel == 0)
+            {
+                depth = 0;
+            }
         }
         else if (toupper(path.at(i)) == 'D')
         {
             seaLevel--;
+            if(seaLevel == 0)
+            {
+                depth = 0;
+            }
             if(seaLevel < 0 && toupper(path.at(i+1) == 'U') && depth != seaLevel) 
             {
                 depth = seaLevel;
@@ -39,6 +48,6 @@ int countingValleys(int steps, std::string path)
 
 int main()
 {
-    std::cout << countingValleys(8, "UDDDUDUU");
+    std::cout << countingValleys(10, "DUDDDUUDUU");
     return 0;
 }
