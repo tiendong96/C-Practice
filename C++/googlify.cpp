@@ -33,3 +33,6 @@ int main()
 
     return 0;
 }
+
+//biggest takeaway: although my solution wasn't wrong, I think it was done better in v2
+//std::string::string - constructs a string object, initializing its value dpepending on the constructor version used (https://www.cplusplus.com/reference/string/string/string/)
