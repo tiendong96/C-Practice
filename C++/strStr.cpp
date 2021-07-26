@@ -17,7 +17,10 @@ int strStr(std::string haystack, std::string needle){
    }
 
 }
-
+/*
+runtime: 4ms, faster than 77.30% of C++ submissions
+memory usage: 6.8 MB, less than 41.56% of C++ submissions
+*/
 
 int main()
 {
